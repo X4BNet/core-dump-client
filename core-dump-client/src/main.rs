@@ -169,6 +169,11 @@ spec:
           secretKeyRef:
             name: s3config
             key: s3Region
+      - name: S3_ENDPOINT
+          valueFrom:
+          secretKeyRef:
+              name: s3config
+              key: s3Endpoint
       - name: CORE_FILE
         value: {core_zip_name}
       - name: EXE_LOCATION
