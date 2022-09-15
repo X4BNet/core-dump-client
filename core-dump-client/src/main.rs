@@ -170,7 +170,7 @@ spec:
             name: s3config
             key: s3Region
       - name: S3_ENDPOINT
-          valueFrom:
+        valueFrom:
           secretKeyRef:
               name: s3config
               key: s3Endpoint
